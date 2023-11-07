@@ -76,6 +76,19 @@ const Single = ({ item }) => {
               justifyContent: !item.img ? "center" : "flex-start",
               padding: "40px",
             }}
+            initial = {!item.img && {
+              x: '-10vw',
+              y: '104vh',
+              opacity: 0.5
+            }}
+            whileInView={!item.img && {
+              x: 0,
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1
+              }
+            }}
           >
             <p
               style={{ fontSize: !item.img ? "20px" : "16px", color: "white" }}
@@ -98,7 +111,7 @@ const Single = ({ item }) => {
   );
 };
 
-const Portfolio = () => {
+const Portfolio = (props) => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -110,16 +123,27 @@ const Portfolio = () => {
     stiffness: 100,
     damping: 30,
   });
-  const opacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
     <div className="portfolio" ref={ref}>
-      <div className="progress">
+      <motion.div className="progress" initial = {!props.val && {
+              x: '-10vw',
+              y: '14vh',
+              opacity: 0.5
+            }}
+            whileInView={!props.val && {
+              x: 0,
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.4
+              }
+            }}>
         <h1>Personal Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
-      </div>
+      </motion.div>
       {items.map((item) => (
-        <Single item={item} key={item.id} />
+        <Single item={item} key={item.id} val={item.img}/>
       ))}
     </div>
   );

@@ -1,4 +1,5 @@
 import "./app.scss";
+import { useEffect } from "react";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
@@ -8,6 +9,20 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 
 const App = () => {
+  useEffect(() => {
+    const handleScroll = (event) => {
+      const scrollSpeed = 0;
+      const newScrollTop = window.scrollY + event.deltaY * scrollSpeed;
+      window.scrollTo(0, newScrollTop);
+    };
+
+    window.addEventListener("wheel", handleScroll);
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <Cursor />
@@ -18,7 +33,7 @@ const App = () => {
       <section id="skills">
         <Parallax type="services" />
       </section>
-      <section>
+      <section id="services">
         <Services />
       </section>
       <section id="projects">

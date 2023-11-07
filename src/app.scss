@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 * {
   padding: 0;
   margin: 0;
@@ -25,6 +26,12 @@ section {
   width: 100vw;
   scroll-snap-align: center;
   overflow: hidden;
+  scroll-snap-stop: always;
+}
+
+#projects, #skills {
+  height: 165vh;
+  scroll-snap-align: bottom;
 }
 
 @mixin mobile {

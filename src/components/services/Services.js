@@ -25,7 +25,7 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.3,
+      duration: 1,
     },
   },
 };
@@ -37,7 +37,7 @@ const imageVariants = {
   animate: {
     scale: 1,
     delay: 1,
-    duration: 0.3,
+    duration: 1,
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
