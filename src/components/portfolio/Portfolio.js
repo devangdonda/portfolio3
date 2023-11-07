@@ -46,7 +46,7 @@ const items = [
     title: "Weather App",
     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Collaborated with a team of CS students to design and develop a weather app which takes in over 200,000 cities and provides the weather of the corresponding city. Conceived and executed multiple tests, and implemented logic in python and retrieved info using API keys. Employed Python to develop code, and used tkinter gui",
-    lang: "React, MUI, SQL, Node.js",
+    lang: "Python, SQL, Node.js",
     git: "",
   },
 ];
@@ -61,7 +61,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section>
+    <section id='porfolio'>
       <div className="container">
         <div className="wrapper">
           {item.img && (

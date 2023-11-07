@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  
 }
 
 
@@ -26,11 +27,14 @@ section {
   width: 100vw;
   overflow: hidden;
   scroll-snap-stop: always;
+  scroll-snap-align: end;
 }
 
 #projects, #skills {
   height: 180vh;
 }
+
+
 
 
 @media (max-width: 768px) {
