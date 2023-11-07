@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio3/static/css/main.f10736dd.css",
-    "main.js": "/portfolio3/static/js/main.bb987768.js",
+    "main.css": "/portfolio3/static/css/main.a21528af.css",
+    "main.js": "/portfolio3/static/js/main.b6a95dff.js",
     "static/media/profile.png": "/portfolio3/static/media/profile.3af744906be29f80f8a4.png",
     "static/media/mountains.png": "/portfolio3/static/media/mountains.6bceb498a0e1e0a70b47.png",
     "static/media/people.webp": "/portfolio3/static/media/people.58eb2f8d793cb5ba671a.webp",
@@ -9,12 +9,13 @@
     "static/media/planets.png": "/portfolio3/static/media/planets.827213af57ae82d007cd.png",
     "static/media/sun.png": "/portfolio3/static/media/sun.1122608e12712a52470d.png",
     "static/media/instagram.png": "/portfolio3/static/media/instagram.b56cd4e34c8bc19caa07.png",
+    "static/media/git.png": "/portfolio3/static/media/git.529b541e3e0a9dc6ffde.png",
     "index.html": "/portfolio3/index.html",
-    "main.f10736dd.css.map": "/portfolio3/static/css/main.f10736dd.css.map",
-    "main.bb987768.js.map": "/portfolio3/static/js/main.bb987768.js.map"
+    "main.a21528af.css.map": "/portfolio3/static/css/main.a21528af.css.map",
+    "main.b6a95dff.js.map": "/portfolio3/static/js/main.b6a95dff.js.map"
   },
   "entrypoints": [
-    "static/css/main.f10736dd.css",
-    "static/js/main.bb987768.js"
+    "static/css/main.a21528af.css",
+    "static/js/main.b6a95dff.js"
   ]
 }
