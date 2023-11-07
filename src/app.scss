@@ -1,6 +1,6 @@
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 
@@ -24,16 +24,43 @@ a {
 section {
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: center;
   overflow: hidden;
   scroll-snap-stop: always;
 }
 
 #projects, #skills {
-  height: 165vh;
-  scroll-snap-align: bottom;
+  height: 180vh;
 }
 
+
+@media (max-width: 768px) {
+  section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    overflow: hidden;
+    scroll-snap-stop: always;
+  }
+  
+  #projects, #skills {
+    height: 180vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    overflow: hidden;
+    scroll-snap-stop: always;
+  }
+  
+  #projects, #skills {
+    height: 180vh;
+  }
+}
+  
 @mixin mobile {
   @media (max-width: 738px) {
     @content;
