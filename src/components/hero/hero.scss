@@ -23,6 +23,8 @@
       padding-left: 100px;
 
       @include mobile {
+        margin-top: 15px;
+        padding-top: 30px;
         height: 50%;
         width: 100%;
         padding: 0;
@@ -39,7 +41,7 @@
           }
 
           @include mobile {
-            font-size: 3em;
+            font-size: 2.8em;
           }
         }
 
@@ -52,7 +54,7 @@
         }
 
         @include mobile {
-          padding: 20px;
+          padding: 20px 20px 0px 20px;
         }
       }
 
@@ -66,6 +68,10 @@
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+        }
+        button:hover {
+          background-color: white;
+          color: rgb(0, 0, 77);
         }
       }
 
@@ -102,9 +108,10 @@
   }
 
   .slidingTextContainer {
+    user-select: none;
     position: absolute;
     font-size: 50vh;
-    bottom: -120px;
+    top: -80px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;

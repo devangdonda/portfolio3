@@ -1,10 +1,12 @@
 @import "../../app.scss";
+
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden;
 
   .textContainer {
     flex: 1;
@@ -15,6 +17,8 @@
     padding: 20px;
 
     @include mobile {
+      padding-top: 30px;
+      padding-bottom: 0;
       align-self: center;
       text-align: center;
       flex-direction: column;
@@ -88,7 +92,7 @@
   }
   .listContainer {
     flex: 2;
-    position: relative; 
+    position: relative;
     display: flex;
     width: 80%;
     max-width: 1366px;
@@ -100,17 +104,21 @@
       width: 100%;
     }
 
-    .box {  
+    .box {
       width: 100%;
       padding: 50px;
-      display: flex;  
+      display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
 
       img {
         width: 70px;
         height: 70px;
+        margin: 0px 30px 30px 30px;
         @include mobile {
-          margin: 0px 5px 0px 5px;
+          width: 40px;
+          height: 40px;
+          margin: 0px 20px 0px 20px;
         }
       }
       @include mobile {
@@ -121,8 +129,6 @@
         gap: 20px;
         padding: 10px;
       }
-
-      
     }
   }
 }

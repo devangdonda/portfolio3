@@ -21,16 +21,16 @@ const Navbar = () => {
           Social Media Bar
         </motion.span>
         <div className="social">
-          <a href="#">
+          <a href="https://www.facebook.com/profile.php?id=100071166443765" target="blank">
             <img src={facebook} alt="" />
           </a>
-          <a href="#">
+          <a href="https://github.com/devangdonda" target="blank">
             <img src={github} alt="" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/devangdonda/" target="blank">
             <img src={instagram} alt="" />
           </a>
-          <a href="#">
+          <a href="https://www.youtube.com/channel/UCYXXqllSLn5NoStNdCLo6mw" target="blank">
             <img src={youtube} alt="" />
           </a>
         </div>

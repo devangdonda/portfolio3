@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import scroll from '../../images/scroll.png';
 import profile from '../../images/profile.png';
 
+
 const textVariants = {
   initial: {
     x: -500,
@@ -39,6 +40,14 @@ const sliderVariants = {
   },
 };
 
+function scrollTo(val) {
+  const section = document.querySelector(val ==='#contact' ? '#contact' : '#projects');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+    window.location.hash = val;
+  }
+}
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -59,10 +68,10 @@ const Hero = () => {
             </motion.h1>
           </div>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} onClick={() => scrollTo('#projects')}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants} onClick={() => scrollTo('#contact')}>Contact Me</motion.button>
 
             <motion.img
               variants={textVariants}

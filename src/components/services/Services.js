@@ -2,12 +2,22 @@ import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
 import people from '../../images/people.webp';
-import skillImg from "../../images/instagram.png";
+import sql from '../../images/skills/sql.png';
+import js from '../../images/skills/js.png';
+import html from '../../images/skills/html.png';
+import css from '../../images/skills/css.png';
+import python from '../../images/skills/python.png';
+import mui from '../../images/skills/mui.png';
+import java from '../../images/skills/java.png';
+import git from '../../images/skills/git.png';
+import reactIcon from '../../images/skills/react.png';
+import node from '../../images/skills/node.png';
+import firebase from '../../images/skills/firebase.png';
 
 const variants = {
   initial: {
-    x: -500,
-    y: 100,
+    x: window.screen.width>=500 ? -500 : -10,
+    y: window.screen.width>=500 ? 100 : 10,
     opacity: 0,
   },
   animate: {
@@ -23,18 +33,17 @@ const variants = {
 const imageVariants = {
   initial: {
     scale: 0.9,
-    opacity: 0.9
   },
   animate: {
-    opacity: 1,
     scale: 1,
     delay: 1,
+    duration: 0.3,
     transition: {
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "mirror",
       type: "spring",
-      stiffness: 100,
-      dampimg: 2,
+      stiffness: 150,
+      damping: 4,
     },
   },
 };
@@ -82,22 +91,37 @@ const Services = () => {
           animate="animate"
         >
           <motion.div className="image" variants={imageVariants}>
-            <img src={skillImg} alt="" />
+            <img src={html} alt="" />
           </motion.div>
           <motion.div className="image" variants={imageVariants}>
-            <img src={skillImg} alt="" />
+            <img src={css} alt="" />
           </motion.div>
           <motion.div className="image" variants={imageVariants}>
-            <img src={skillImg} alt="" />
+            <img src={js} alt="" />
           </motion.div>
           <motion.div className="image" variants={imageVariants}>
-            <img src={skillImg} alt="" />
+            <img src={reactIcon} alt="" />
           </motion.div>
           <motion.div className="image" variants={imageVariants}>
-            <img src={skillImg} alt="" />
+            <img src={sql} alt="" />
           </motion.div>
           <motion.div className="image" variants={imageVariants}>
-            <img src={skillImg} alt="" />
+            <img src={git} alt="" />
+          </motion.div>
+          <motion.div className="image" variants={imageVariants}>
+            <img src={mui} alt="" />
+          </motion.div>
+          <motion.div className="image" variants={imageVariants}>
+            <img src={python} alt="" />
+          </motion.div>
+          <motion.div className="image" variants={imageVariants}>
+            <img src={java} alt="" />
+          </motion.div>
+          <motion.div className="image" variants={imageVariants}>
+            <img src={firebase} alt="" />
+          </motion.div>
+          <motion.div className="image" variants={imageVariants}>
+            <img src={node} alt="" />
           </motion.div>
         </motion.div>
       </motion.div>
