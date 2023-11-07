@@ -3,6 +3,8 @@ import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 import planets from "../../images/planets.png";
 import sun from "../../images/sun.png";
+import stars from "../../images/stars.png";
+import mountains from '../../images/mountains.png';
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -12,8 +14,9 @@ const Parallax = ({ type }) => {
     offset: ["start start", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "550%"]);
+  const yP = useTransform(scrollYProgress, [0, 1], ["0%", "130%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
   return (
     <div
@@ -29,15 +32,25 @@ const Parallax = ({ type }) => {
       <motion.h1 style={{ y: yText }}>
         {type === "services" ? "Skills?" : "Projects?"}
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
-      <motion.div
+      {/* <motion.div className="mountains"></motion.div> */}
+      <motion.img src={mountains} alt="" className="mountains"/>
+      {/* <motion.div
         className="planets"
         style={{
           y: yBg,
           backgroundImage: `url(${type === "services" ? planets : sun})`,
         }}
-      ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      ></motion.div> */}
+      <motion.img
+        src={type === "services" ? planets : sun}
+        alt=""
+        className="planets"
+        style={{
+          y: yP,
+        }}
+      />
+      {/* <motion.div style={{ x: yBg }} className="stars"></motion.div> */}
+      <motion.img src={stars} alt="" style={{ x: yBg }} className="stars" />
     </div>
   );
 };
