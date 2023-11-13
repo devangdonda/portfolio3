@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import About from './components/about/About';
 
 const App = () => {
   useEffect(() => {
@@ -25,10 +26,14 @@ const App = () => {
 
   return (
     <div>
+      
       <Cursor />
       <section id="homepage">
         <Navbar />
         <Hero />
+      </section>
+      <section id="about">
+        <About />
       </section>
       <section id="skills">
         <Parallax type="services" />

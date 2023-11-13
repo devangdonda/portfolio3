@@ -27,10 +27,10 @@ const itemVariants = {
 const Links = ({ setOpen }) => {
   const items = [
     { name: "Homepage", link: "homepage" },
+    { name: "About Me", link: "about" },
     { name: "Skills", link: "skills" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
-    { name: "About", link: "About" },
   ];
 
   return (
