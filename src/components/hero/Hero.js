@@ -63,7 +63,7 @@ const Hero = () => {
               Hi, I'm <b>Devang Donda.</b>
             </motion.h2>
             <motion.h1 variants={textVariants}>
-              I am a 3rd year Computer Science Student who like to code Web
+              I am a 4th year Computer Science Student who like to code Web
               Application, Games, and more.
             </motion.h1>
           </div>
