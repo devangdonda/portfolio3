@@ -38,6 +38,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          formRef.current.reset();
           setSuccess(true);
         },
         (error) => {
