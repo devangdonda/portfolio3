@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio3/static/css/main.25b12ca2.css",
+    "main.js": "/portfolio3/static/js/main.a5e99dba.js",
+    "static/media/mun-drama.png": "/portfolio3/static/media/mun-drama.73b674c994d0e3e4fd10.png",
+    "static/media/portfolio.png": "/portfolio3/static/media/portfolio.934d880d3ec4a9ef52c0.png",
+    "static/media/ecommerce.png": "/portfolio3/static/media/ecommerce.d3d66bdf3470bfe42ba6.png",
+    "static/media/profile.png": "/portfolio3/static/media/profile.3af744906be29f80f8a4.png",
+    "static/media/mountains.png": "/portfolio3/static/media/mountains.6bceb498a0e1e0a70b47.png",
+    "static/media/people.webp": "/portfolio3/static/media/people.58eb2f8d793cb5ba671a.webp",
+    "static/media/stars.png": "/portfolio3/static/media/stars.a979f6ed7ad00c7ea0b2.png",
+    "static/media/planets.png": "/portfolio3/static/media/planets.827213af57ae82d007cd.png",
+    "static/media/sun.png": "/portfolio3/static/media/sun.1122608e12712a52470d.png",
+    "static/media/instagram.png": "/portfolio3/static/media/instagram.b56cd4e34c8bc19caa07.png",
+    "static/media/linkedin.png": "/portfolio3/static/media/linkedin.31f2d62b774887991c90.png",
+    "static/media/git.png": "/portfolio3/static/media/git.529b541e3e0a9dc6ffde.png",
+    "index.html": "/portfolio3/index.html",
+    "main.25b12ca2.css.map": "/portfolio3/static/css/main.25b12ca2.css.map",
+    "main.a5e99dba.js.map": "/portfolio3/static/js/main.a5e99dba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25b12ca2.css",
+    "static/js/main.a5e99dba.js"
+  ]
+}
