@@ -62,6 +62,16 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+
+      @include mobile {
+        margin: 0;
+      }
+
+      svg {
+        width: calc(100% - 50px);
+        display: block;
+        height: auto; // Keeps aspect ratio
+      }
     }
 
     form {

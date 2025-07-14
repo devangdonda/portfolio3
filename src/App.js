@@ -10,7 +10,7 @@ import Services from "./components/services/Services";
 import About from './components/about/About';
 
 const App = () => {
-  useEffect(() => {
+  /* useEffect(() => {
     const handleScroll = (event) => {
       const scrollSpeed = 0;
       const newScrollTop = window.scrollY + event.deltaY * scrollSpeed;
@@ -22,7 +22,7 @@ const App = () => {
     return () => {
       window.removeEventListener("wheel", handleScroll);
     };
-  }, []);
+  }, []); */
 
   return (
     <div>

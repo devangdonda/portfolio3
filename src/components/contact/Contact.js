@@ -59,11 +59,11 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>dkdonda@mun.ca</span>
+          <span>dondadevang@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Newfoundland, Canada</span>
+          <span>Ontario, Canada</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
@@ -101,8 +101,8 @@ const Contact = () => {
           </svg> */}
 
           <svg
-            width={window.screen.height > 745 ? "450px" : "239px"}
-            height={window.screen.height > 745 ? "450px" : "239px"}
+            width={window.screen.height > 745 ? "450px" : "200px"}
+            height={window.screen.height > 745 ? "450px" : "200px"}
             viewBox="0 0 32.666 32.666"
           >
             <motion.path
